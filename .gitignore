@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-electron/
+*.db
+.env
+
+# Windows personal launch scripts (contain hardcoded local paths)
+Action.bat
+start.vbs
+*.lnk
+
+# Build artifacts
+release/
+out/

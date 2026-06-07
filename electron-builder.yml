@@ -1,0 +1,18 @@
+appId: com.freelancecrm.app
+productName: Freelance CRM
+directories:
+  output: dist-electron
+files:
+  - electron/**/*
+  - dist/**/*
+  - node_modules/**/*
+  - package.json
+extraResources:
+  - from: NOTION_SETUP.md
+    to: NOTION_SETUP.md
+win:
+  target: nsis
+  icon: public/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true

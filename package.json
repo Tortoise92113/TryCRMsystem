@@ -1,0 +1,48 @@
+{
+  "name": "freelance-crm",
+  "version": "1.0.0",
+  "description": "Desktop CRM for freelancers",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"vite --port 5173\" \"wait-on http://localhost:5173 && electron .\"",
+    "build": "vite build && electron-builder",
+    "vite": "vite",
+    "electron": "electron .",
+    "seed": "node scripts/seed.js",
+    "seed:reset": "node scripts/seed.js --reset"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-select": "^2.2.6",
+    "@radix-ui/react-slot": "^1.2.4",
+    "axios": "^1.6.8",
+    "better-sqlite3": "^9.4.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "googleapis": "^140.0.0",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+    "lucide-react": "^1.16.0",
+    "marked": "^18.0.3",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "electron": "^29.1.4",
+    "electron-builder": "^24.13.3",
+    "electron-rebuild": "^3.2.9",
+    "postcss": "^8.4.38",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "recharts": "^2.12.3",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.6",
+    "wait-on": "^7.2.0"
+  }
+}
